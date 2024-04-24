@@ -1,0 +1,155 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FFFFFF;
+  color: #333333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+}
+
+header {
+  background-color: #3498DB;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+.attraction {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.attraction:hover {
+  transform: scale(1.03);
+}
+
+.attraction img {
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.attraction img:hover {
+  filter: brightness(1.15);
+}
+
+.description {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer {
+  background-color: #34495E;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  transition: background-color 0.5s ease;
+}
+
+.attraction img:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+h2 {
+  overflow: hidden; 
+  border-right: .15em solid orange;
+  white-space: nowrap; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+body {
+  animation: gradientBG 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#toggle-theme {
+  cursor: pointer;
+  background: linear-gradient(45deg, #3498db, #9b59b6);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+  font-size: 16px; /* Ensuring text is readable */
+  font-weight: bold;
+}
+
+#toggle-theme:hover {
+  background: linear-gradient(45deg, #9b59b6, #3498db);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+}
+
+#toggle-theme:focus {
+  outline: none; 
+}
+
+.dark-mode {
+  background-color: #121212; 
+  color: #c7c7c7; 
+}
+
+.dark-mode header {
+  background-color: #1a1a1a; 
+}
+
+.dark-mode .description {
+  background-color: #222; 
+  color: #e1e1e1; 
+}
+
+.dark-mode h2 {
+  color: #FFD700;
+}
+
+.dark-mode p {
+  color: #B0C4DE; 
+}
+
+footer {
+  transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+.dark-mode footer {
+  background-color: #1a1a1a; 
+  color: #c7c7c7; 
+}
+
+.dark-mode a:hover {
+  color: #FFA07A; 
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode p, .dark-mode a {
+  transition: color 0.3s ease; 
+}
